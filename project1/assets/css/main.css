@@ -1,0 +1,40 @@
+body{
+    width: 500px;
+    margin: 10px auto;
+    padding: 25px;
+    background: #348F50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poor Story', cursive;
+}
+#container{
+     width: 100%;
+    margin: 15px auto;
+}
+h1{
+    margin: 0.5em auto;
+    text-align: center;
+    color: rgb(184, 253, 230);
+    font-weight: bold;
+}
+.cizilme{
+    color: rgb(233, 108, 108);
+    text-decoration: line-through;
+}
+input{
+    height: 30px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 15px rgb(218, 230, 200);
+    border: none;
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+ul li {
+    font-size: 25px;
+    text-align: left;
+}
+span{
+    color: rgb(255, 157, 157);
+}
