@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".div1").fadeIn(2000);
+            $(".div2").fadeIn(3500);
+            $(".div3").fadeIn(5000);
+        });
+    })
+    
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <button>tiklma</button>
+
+    <div class="div1" style="display:none; width:80px; height: 80px;  background-color: red; margin: 10px;"></div>
+    <div class="div2" style="display:none; width:80px; height: 80px;  background-color: blue; margin: 10px;"></div>
+    <div class="div3" style="display:none; width:80px; height: 80px;  background-color: green; margin: 10px;"></div>
+    
+</body>
+</html>

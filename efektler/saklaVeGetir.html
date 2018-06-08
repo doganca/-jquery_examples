@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../lib/jquery-3.3.1.slim.min.js"></script>
+    <title>Document</title>
+
+
+    <script>
+        $(document).ready(function(){
+
+            $("#sakla").click(function(){ // sakla id getirdim , tiklama fonksiyonu tanimladim
+                $("p").hide(); // saklaya tiklaninca etkilenecek ilk class div ekledim , tiklaninca saklanmasini soyledim hide() saklar
+
+            });
+
+            $("#getir").click(function(){
+                $("p").show();
+            });
+
+
+
+        });
+    
+    
+    </script>
+</head>
+<body>
+
+
+    <p>Botona tikladiginda gelir veya gider</p>
+
+    <button id="sakla">Sakla</button>
+    <button id="getir">Getir</button>
+
+
+    <div class="ilk" style="width: 100px; height: 100px; margin: 25px; background-color: red;"></div>
+
+
+
+
+
+    
+</body>
+</html>

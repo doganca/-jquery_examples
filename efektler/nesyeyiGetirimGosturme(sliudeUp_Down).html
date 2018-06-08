@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <title>Document</title>
+    <style>
+       #selam , #merhaba{
+           padding: 15px;
+           text-align: center;
+           background-color: greenyellow;
+           border: 1px solid orchid;
+           color: #fff;
+           font-size: 20px;
+           font-weight: bold;
+        
+       } 
+
+       #merhaba{
+           padding: 50px;
+           display: none;
+       }
+    </style>
+    <script>
+        $(document).ready(function(){ // belegelrin yuklenmesini bekledim
+            $("#selam").click(function(){ // selam butonuma tiklaninca olacak fonksiyonu yazmaya basladim
+                $("#merhaba").slideToggle("slow"); // slideToogle tiklayinca gosterir ve ya geri alir . sadece gosterme == > slideDown , yukari geri alma ==>slideUp
+            });
+        });
+    
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="selam">selamlasmak icin tiklayin</div>
+        <div id="merhaba">merhabalar .... </div>
+    </div>
+    
+</body>
+</html>

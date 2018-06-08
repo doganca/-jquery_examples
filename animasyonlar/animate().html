@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var div = $("#ilk");
+            var iki = $("#iki");
+            $("#btn1").click(function(){
+                div.animate({width: '200px'},2000);
+                div.animate({height: '400px'},3000);
+                div.animate({width: '450px'},2500);
+                div.animate({height: '650px'},1500);
+                div.animate({width: '650px'},3500);
+                div.animate({height: '450px'},2500);
+                div.animate({width: '350px'},1500);
+                div.animate({height: '250px'},3600);
+                div.animate({width: '100px'},4500);
+                div.animate({height: '100px', opacity: '0.3'},2000);
+
+            });
+
+            $("#btn2").click(function(){
+                iki.animate({width : '+=50px'});
+                iki.animate({height: '+=50px'});
+            });
+
+            
+        });
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="display: flex; justify-content: space-evenly;">
+         <div class="bir">
+             <button id="btn1" style="margin: 15px; width: 100px;">Click</button>
+             <div id="ilk" style="background: rebeccapurple; height: 100px; width: 100px; position: absolute; margin: 15px;"></div>
+        </div>
+        <div class="iki" align="right">
+            <button id="btn2" style="margin: 15px; width: 100px;">buyut</button>
+            <div id="iki" style="background: greenyellow; height: 100px; width: 100px; margin: 15px;"></div>
+        </div>
+
+ </div>
+</body>
+</html>

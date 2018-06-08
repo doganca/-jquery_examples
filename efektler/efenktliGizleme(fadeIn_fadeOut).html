@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script>
+    $(document).ready(function(){ // fadeToggle ile gosterip geri getirme
+        $("#gizle").click(function(){ // buttona tiklandiginda olacak seyler
+            $(".div1").fadeToggle(4000); // buttona tiklandiginda div 1 i 5 sn de  gizleme
+            $(".div2").fadeToggle(3000); // buttona tiklandiginda div 2 yi 3 sn de gizleme
+            $(".div3").fadeToggle(1500); // butona tiklandiginda div 3 1.5 snd e gizleme
+        });
+
+        // $("#goster").click(function(){
+        //     $(".div1").fadeIn(1500); // butonna tikladinginda div1 1.5 sn de gostert
+        //     $(".div2").fadeIn(3000); // buttona tiklandiginda div 2 3 sn de goster
+        //     $(".div3").fadeIn(4000); // buttona tiklandidinda 4 sn de gosterir
+        // });
+
+        //fadeToogle ile ikisini ayni anda yapabiliriz.
+
+        $("#saydam").click(function(){ // fadeTo ile saydam yapma
+            $(".div4").fadeTo("slow", 0.1); // buttona tikladigimiz 0.1 derecesinde divi saydam yapiyor
+            $(".div5").fadeTo("fast", 0.5); // buttona tikladigimda divi hizli bir sekilde 0.5 saydam yapiyor;
+            $(".div6").fadeTo("slow", 0.3); // buttona tikladigimda divi yavasca saydam yapiyor;
+        });
+
+        $("#saydam").dblclick(function(){
+            $(".div4").fadeTo("slow", 1); // cift tiklayinca eski haline geliyr kutu
+            $(".div5").fadeTo("fast", 1);
+            $(".div6").fadeTo("fast", 1);
+        })
+
+
+
+
+    });
+    
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="buton" style="display: flex; justify-content: center;">
+
+     <button id="gizle" style="font-size: 25px; color: floralwhite; background: gray; margin-left: 100px; padding: 15px;">kutu gizle ve goster </button>
+     <button id="saydam" style="font-size: 25px; color: floralwhite; background: gray; margin-left: 100px; padding: 15px;">Saydam yap</button>
+</div>
+    <div class="container" style="display: flex; justify-content: center;">
+
+            <div class="div1" style="height: 100px; width: 100px; background-color: red; margin: 15px; "></div>
+            <div class="div2" style="height: 100px; width: 100px; background-color: blue; margin : 15px; " ></div>
+            <div class="div3" style="height: 100px; width: 100px; background-color: forestgreen; margin: 15px;"></div>
+
+        <div class="saydam" style="display: flex; flex-direction: column;">
+
+            <div class="div4" style="height: 100px; width: 100px; background-color: red; margin: 15px; "></div>
+            <div class="div5" style="height: 100px; width: 100px; background-color: blue; margin : 15px; " ></div>
+            <div class="div6" style="height: 100px; width: 100px; background-color: forestgreen; margin: 15px;"></div>
+
+        </div>
+</div>
+
+</body>
+</html>
